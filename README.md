@@ -22,6 +22,9 @@ telco_attrition_predictor/
 │
 ├── artifacts/
 │   └── attrition_pipeline.pkl        trained scikit-learn pipeline
+├── model/
+│   ├── __init__.py                   package alias for submission layout
+│   └── attrition_pipeline.pkl        duplicate model copy for assignment-style structure
 │
 ├── data/
 │   ├── telco_customers.csv           raw dataset (7,043 rows, 21 columns)
@@ -33,6 +36,7 @@ telco_attrition_predictor/
 ├── notebooks/
 │   └── attrition_study.ipynb         EDA, feature engineering, training, export
 │
+├── app.py                            app entry point alias for standard Flask structure
 ├── server.py                         Flask application
 ├── sample_payload.json               example request body for /predict
 ├── requirements.txt                  runtime dependencies
@@ -342,6 +346,8 @@ Successful response:
 
 ```json
 {
+  "prediction": "Yes",
+  "churn_probability": 0.5775,
   "attrition_flag": "Yes",
   "attrition_probability": 0.5775
 }

@@ -83,9 +83,14 @@ def assess_customer():
 
         probability = pipeline.predict_proba(record)[0][1]
 
+        prediction = "Yes" if label == 1 else "No"
+        churn_probability = round(float(probability), 4)
+
         return jsonify({
-            "attrition_flag": "Yes" if label == 1 else "No",
-            "attrition_probability": round(float(probability), 4)
+            "prediction": prediction,
+            "churn_probability": churn_probability,
+            "attrition_flag": prediction,
+            "attrition_probability": churn_probability
         })
 
     except Exception as exc:
