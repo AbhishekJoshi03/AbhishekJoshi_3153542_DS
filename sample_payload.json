@@ -1,0 +1,23 @@
+{
+    "client_gender": "Female",
+    "senior_flag": 0,
+    "has_partner": "Yes",
+    "has_dependents": "No",
+    "tenure_months": 5,
+    "phone_line": "Yes",
+    "multi_line": "No",
+    "internet_plan": "Fiber optic",
+    "security_addon": "No",
+    "backup_addon": "No",
+    "protection_addon": "No",
+    "support_addon": "No",
+    "tv_streaming": "Yes",
+    "movie_streaming": "Yes",
+    "contract_term": "Month-to-month",
+    "ebilling": "Yes",
+    "payment_mode": "Electronic check",
+    "monthly_fee": 80.5,
+    "total_billed": 402.5,
+    "mean_monthly_fee": 80.5,
+    "active_service_count": 3
+}
