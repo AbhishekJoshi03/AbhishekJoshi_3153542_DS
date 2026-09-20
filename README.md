@@ -11,6 +11,8 @@ was trained inside a scikit-learn pipeline and exposed through a Flask REST
 API. A small browser console is served by the same application for manual
 scoring.
 
+Git repository: https://github.com/AbhishekJoshi07/Telco-Attrition-Predictor
+
 ---
 
 ## 2. Project Layout
